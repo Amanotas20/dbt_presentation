@@ -1,3 +1,8 @@
+
+{{ config(
+  enabled=false
+) }}
+
 SELECT
   company_symbol, company_name, stock_exchange_name, date, data_source_name,
   {{ dbt_utils.pivot(

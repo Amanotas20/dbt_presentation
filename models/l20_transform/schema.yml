@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+  - name: tfm_daily_position
+    # SINGLE LINE DESCRIPTION EXAMPLE
+    description: Daily trades for mayor stocks
+    columns:
+      - name: date
+        # LINK TO ANOTHER DESCRIPTION EXAMPLE
+        description: "built based on available date in [base_knoema_stock_history](#!/model/model.dbt_hol.base_knoema_stock_history)"
+      - name: trader
+        # MULTILINE DESCRIPTION EXAMPLE
+        description: >
+            One record per trader. Note that a customer must have made a purchase to
+            be included in this <Term id="table" /> — customer accounts that were created but never
+            used have been filtered out.
+      - name: stock_exchange_name
+        # MARKDOWN ON DESCRIPTION EXAMPLE
+        description: "**[Read more](https://www.google.com/)**"
+      - name: instrument
+        # INCLUDE IMAGE FROM WEB
+        description: "![stocks logo](https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/6/44792/files/2017/04/stock-market-3-21gyd1b.jpg)"
+      - name: book
+        # DOCS BLOCK EXAMPLE
+        description: '{{ doc("book") }}'
+      - name: currency
+        description: Currency symbol
+      - name: total_shares
+        description: Total amount of shares included in the trade
