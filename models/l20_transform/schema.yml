@@ -24,7 +24,8 @@ models:
       - name: book
         # DOCS BLOCK EXAMPLE
         description: '{{ doc("book") }}'
+        # INCLUDE IMAGE FROM ASSETS FOLDER
       - name: currency
-        description: Currency symbol
+        description: "![dolar logo](assets/dolar_sym.jpg)"
       - name: total_shares
         description: Total amount of shares included in the trade
