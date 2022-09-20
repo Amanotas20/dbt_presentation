@@ -27,6 +27,7 @@ models:
         # INCLUDE IMAGE FROM ASSETS FOLDER
       - name: currency
         description: "![dolar logo](assets/dollar-symbol.svg)"
-
+        # INCLUDE IMAGE FROM ASSETS UPLOADED DIRECTLY IN DBTCLOUD
       - name: total_shares
-        description: Total amount of shares included in the trade
+        description:  "![dolar logo](assets/dollar-cloud.svg)"
+        
