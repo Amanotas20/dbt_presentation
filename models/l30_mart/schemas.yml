@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: fct_trading_pnl
+    description: >
+      Trading Fact Table that contains data about the stock movements per date
+      and per trader. Including Volume, Cost, Currency and Market Value
+    columns:
+      - name: instrument
+        description: Stock ID
+        tests:
+          - not_null
+      - name: stock_exchange_name
+        description: Exchange where stock movements were made
+      - name: date
+        description: Date where stock movement was made
+      - name: trader
+        description: Trader responsible for buying/selling stocks
+      - name: volume
+        description: Stock volume moved
+
